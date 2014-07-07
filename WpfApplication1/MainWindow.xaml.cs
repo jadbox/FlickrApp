@@ -42,7 +42,8 @@ namespace WpfApplication1
 
         private void CommonCommandBinding_Execute(object sender, ExecutedRoutedEventArgs e)
         {
-            addt(flickr.getImageUrlForTag(searchFor.Text));
+            //addt(flickr.getImageUrlForTag(searchFor.Text));
+            flickr.getImageUrlForTagRx(searchFor.Text, addt);
         }
 
         public void addt(String url) {
